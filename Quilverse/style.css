@@ -8,9 +8,6 @@ h1 {
 }
 
 body {
-    /* background-image: url(loginBG.png);
-    background-repeat: no-repeat;
-    background-size: cover; */
     background-color: rgb(230, 230, 230);
 }
 
@@ -28,6 +25,16 @@ body {
 }
 .link{
     margin: 20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    margin: 5px;
 }
 
 input {
@@ -87,7 +94,6 @@ button:active {
 
 a {
     color: rgb(0, 102, 192);
-    margin: 5px;
     text-decoration: none;
 }
 
@@ -132,3 +138,4 @@ a:hover {
         background-color: rgb(255, 255, 255);
     }
 }
+
