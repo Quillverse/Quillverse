@@ -78,7 +78,7 @@ nav li a{
     transition: .1s ease-in-out;
     
 }
-nav a:hover {
+.nav-links a:hover {
     background-color: rgba(116, 198, 157, .1);
     border-bottom: 3px solid var(--primaryColor1);
 }
@@ -89,7 +89,7 @@ nav ul.dropdown li{
 .dropdown {
     width: 100%;
     background-color: var(--primaryColor2);
-    opacity: 0.8;
+    opacity: 0.9;
     position: absolute;
     z-index: 999;
     display: none;
@@ -117,7 +117,6 @@ main {
 aside {
     display: grid;
     gap: 10px;
-    /* grid-template-rows: 1fr; */
     grid-template-rows: .5fr 1fr 1fr;
     grid-template-areas: "search" "side1" "side1";
     grid-area: aside;
@@ -132,6 +131,9 @@ section {
     grid-template-areas:
         "carousel carousel";
     overflow: scroll;
+}
+section::-webkit-scrollbar{
+    display: none;
 }
 
 footer {
@@ -150,8 +152,9 @@ footer hr {
 .carousel {
     border-radius: 5px;
     grid-area: carousel;
-    position: relative;
-    /* max-width: 48rem; */
+}
+.slider::-webkit-scrollbar{
+    display: none;
 }
 .slider{
     display: block;
@@ -180,12 +183,6 @@ footer hr {
     border-radius: 5px;
 }
 
-/* .catagories {
-    border: 2px solid green;
-    border-radius: 5px;
-    grid-area: side1;
-
-} */
 
 .recomendation {
     /* border: 2px solid green; */
@@ -430,12 +427,10 @@ footer hr {
     height: 100%;
     overflow: hidden;
     transition: all 0.6s ease-in-out;
-    border-radius: 150px 0 0 100px;
     z-index: 1000;
 }
 .log-in-container.active .toggle-container{
     transform: translateX(-100%);
-    border-radius: 0 150px 100px 0;
 }
 .toggle{
     background-color: var(--primaryButtonColor);
