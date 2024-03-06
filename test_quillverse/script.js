@@ -2,6 +2,39 @@ const container = document.getElementById('log-in-container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
+
+// navbar scroll change
+
+document.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+
+    if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+    }
+    else {
+        header.classList.remove('scrolled')
+    }
+})
+
+// sign-up toggle
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+
+// dropdown
+
+function myFun() {
+    var divs = document.getElementById('dropdown');
+    divs.classList.toggle('show');
+}
+
+// slider
+
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
@@ -38,27 +71,4 @@ function showSlides() {
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
-
-document.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-
-    if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-    }
-    else {
-        header.classList.remove('scrolled')
-    }
-})
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-});
-
-loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
-});
-
-function myFun() {
-    var divs = document.getElementById('dropdown');
-    divs.classList.toggle('show');
 }
