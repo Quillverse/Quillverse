@@ -17,99 +17,82 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <div class="logo-img">
-                    <h1>QUILLVERSE</h1>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a onclick="myFun()" href="#">CATAGORIES <i class="fa-solid fa-angle-down fa-2xs"></i></a>
-                        <ul class="dropdown" id="dropdown">
-                            <li><a href="#">SCIENCE & TECHNOLOGY</a></li>
-                            <li><a href="#">FINANCE</a></li>
-                            <li><a href="#">TRAVEL</a></li>
-                            <li><a href="#">FOOD</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="user">
-                    <div class="user-btn"><a href="#"><i class="fa-solid fa-user" style="color: #2D6A4F;"></i></a></div>
-                </div>
-            </nav>
-            <div class="hero">
+    <header>
+        <nav>
+            <div class="logo-img">
+                <h1>QUILLVERSE</h1>
             </div>
-        </header>
-        <main>
-            <section>
-                <div class="carousel">
-                    <div class="slideshow-container">
-                        <div class="mySlides fade">
-                            <div class="numbertext">1 / 3</div>
-                            <img src="img1.jpg" style="width:100%">
-                            <div class="text">Caption Text</div>
-                        </div>
-                        <div class="mySlides fade">
-                            <div class="numbertext">2 / 3</div>
-                            <img src="img2.jpg" style="width:100%">
-                            <div class="text">Caption Two</div>
-                        </div>
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="img3.jpg" style="width:100%">
-                            <div class="text">Caption Three</div>
-                        </div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+            <div class="user">
+                <div class="user-btn"><a href="#"><i class="fa-solid fa-user" style="color: #2D6A4F;"></i></a></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-sec">
+            <img class="hero-sec-img" src="BG.jpg">
+        </section>
+        <section class="slider-container">
+            <div class="top-reads-title">
+                <h2>Top reads</h2>
+            </div>
+    
+            <div class="book-slider-content">
+                <div class="book-wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="book-content">
+                        <h2>title</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nobis porro architecto ipsam
+                            voluptatibus nemo maiores assumenda quia. Officiis exercitationem impedit ut earum aliquid
+                            tempore
+                            saepe cum non eum fuga?</p>
+                        <h5>Author</h5>
+    
                     </div>
-                    <br>
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+                    <div class="book-content">
+                        <h2>title</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nobis porro architecto ipsam
+                            voluptatibus nemo maiores assumenda quia. Officiis exercitationem impedit ut earum aliquid
+                            tempore
+                            saepe cum non eum fuga?</p>
+                        <h5>Author</h5>
                     </div>
+                    <div class="book-content">
+                        <h2>title</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nobis porro architecto ipsam
+                            voluptatibus nemo maiores assumenda quia. Officiis exercitationem impedit ut earum aliquid
+                            tempore
+                            saepe cum non eum fuga?</p>
+                        <h5>Author</h5>
+                    </div>
+                    <div class="book-content">
+                        <h2>title</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nobis porro architecto ipsam
+                            voluptatibus nemo maiores assumenda quia. Officiis exercitationem impedit ut earum aliquid
+                            tempore
+                            saepe cum non eum fuga?</p>
+                        <h5>Author</h5>
+                    </div>
+                    <div class="book-content">
+                        <h2>title</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nobis porro architecto ipsam
+                            voluptatibus nemo maiores assumenda quia. Officiis exercitationem impedit ut earum aliquid
+                            tempore
+                            saepe cum non eum fuga?</p>
+                        <h5>Author</h5>
+                    </div>
+    
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+    
                 </div>
-                <!-- <div class="carousel">
-                    <div class="slider">
-                        <div class="slide" id="slide1">
-                            <img src="image1.png" alt="">
-                            <div>
-                                <h1>Lorem ipsum dolor sit amet.</h1>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos commodi eaque, est enim
-                                    consectetur placeat soluta id, iure quibusdam dignissimos, saepe debitis? Nam labore
-                                    culpa odio facilis, vitae dolorum maxime?</p>
-                                <a href="#">Read more...</a>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide2">
-                            <img src="image2.png" alt="">
-                            <div>
-                                <h1>Lorem ipsum dolor sit amet.</h1>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos commodi eaque, est
-                                    enim consectetur placeat soluta id, iure quibusdam dignissimos, saepe debitis?
-                                    Nam labore culpa odio facilis, vitae dolorum maxime?</p>
-                                <a href="#">Read more...</a>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide3">
-                            <img src="image3.png" alt="">
-                            <div>
-                                <h1>Lorem ipsum dolor sit amet.</h1>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos commodi eaque,
-                                    est enim consectetur placeat soluta id, iure quibusdam dignissimos, saepe
-                                    debitis? Nam labore culpa odio facilis, vitae dolorum maxime?</p>
-                                <a href="#">Read more...</a>
-                            </div>
-                        </div>
-                        <div class="slider-nav">
-                            <a href="#slide1"></a>
-                            <a href="#slide2"></a>
-                            <a href="#slide3"></a>
-                        </div>
-                    </div>
-                </div> -->
+            </div>
+        </section>
+        <section class="container">
+            <div class="content">
                 <div class="box slide">
                     <img src="image3.png" alt="">
                     <div>
@@ -170,36 +153,38 @@
                         <a href="#">Read more...</a>
                     </div>
                 </div>
-            </section>
-            <aside>
-                <div class="search">
-                    <input type="search" placeholder="Search....">
-                    <button class="search-btn btn">Search</button>
-                </div>
+            </div>
 
-                <div class="recomendation">
-                    <h2>You May Also Like</h2>
+            <aside>
+                <h2>Explore Topics</h2>
+                <div class="explore-topics">
+
+                    <div class="topic">Programming</div>
+                    <div class="topic">Data Science</div>
+                    <div class="topic">Technology</div>
+                    <div class="topic">Self Improvement</div>
+                    <div class="topic">Relationships</div>
+                    <div class="topic">Productivity</div>
                 </div>
             </aside>
-        </main>
-        <footer>
-            <div class="social">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-snapchat"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </div>
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy policy</a></li>
-            </ul>
-            <hr>
-            <p class="copyright">Copyright &copy;2024 | Quillverse</p>
-        </footer>
-    </div>
-
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy policy</a></li>
+        </ul>
+        <hr>
+        <p class="copyright">Copyright &copy;2024 | Quillverse</p>
+    </footer>
 </body>
 <script src="script.js"></script>
 
