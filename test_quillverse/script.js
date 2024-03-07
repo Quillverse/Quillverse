@@ -1,6 +1,17 @@
 const container = document.getElementById('log-in-container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
+const carousel = document.querySelector(".book-wrapper");
+const arrowBtn = document.querySelectorAll(".book-wrapper i");
+const firstCardWidth = carousel.querySelector(".book-content").offsetWidth;
+
+// slider
+
+arrowBtn.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+    })
+});
 
 
 // navbar scroll change
