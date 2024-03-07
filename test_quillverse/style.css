@@ -27,9 +27,11 @@
 }
 
 /* main Home  */
+
 ul{
     list-style-type: none;
 }
+
 body {
     margin: 0;
     font-size: .8rem;
@@ -45,6 +47,8 @@ header {
 }
 
 nav{
+    z-index: 100;
+    padding: 0 25px;
     top: 0px;
     width: 100%;
     font-size: 1.2rem;
@@ -54,7 +58,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     transition: all 0.4s ease-in-out;
-    border-radius: 0 0 10px 10px;
 }
 nav ul{
     padding: 0;
@@ -82,26 +85,12 @@ nav li a{
     background-color: rgba(116, 198, 157, .1);
     border-bottom: 3px solid var(--primaryColor1);
 }
-nav ul.dropdown li{
-    display: block;
-    border: 1px solid #fff;
-}
-.dropdown {
-    width: 100%;
-    background-color: var(--primaryColor2);
-    opacity: 0.9;
-    position: absolute;
-    z-index: 999;
-    display: none;
-    border-radius: 0 0 10px 10px;
-}
 
 .show{
     display: block;
 }
 header.scrolled nav{
-    background-color: var(--primaryColor2);
-    opacity: 0.9;
+    background-color: var(--primaryColor3);
 }
 .user{
     margin: 1rem;
@@ -122,36 +111,126 @@ header.scrolled nav{
 .user-btn a:hover{
     opacity: 0.8;
 }
-main {
-    height: 1000px;
+
+.hero-sec {
+    height: 500px;
+}
+
+.hero-sec-img {
+    width: 100%;
+    height: 500px;
+}
+
+/*slider*/
+
+.book-content p {
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slider-container {
+    padding: 20px 0 10px 0;
+}
+
+.top-reads-title {
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.book-slider-content {
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.book-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    padding: 20px;
-    grid-template-areas:
-        "section section section aside";
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100%/3);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.book-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.book-wrapper i {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.book-wrapper i:first-child {
+    left: -60px;
+}
+
+.book-wrapper i:last-child {
+    right: -60px;
+}
+
+.book-content {
+    background-image: url(image1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 5px;
+    scroll-snap-align: start;
+    width: 280px;
+    height: 210px;
+    margin: 5px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.container{
+    margin-top: 1.5em;
+    display: flex;
 }
 
 aside {
-    display: grid;
-    gap: 10px;
-    grid-template-rows: .5fr 1fr 1fr;
-    grid-template-areas: "search" "side1" "side1";
-    grid-area: aside;
+    position: sticky;
+    top: 110px;
+    height: 320px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 20px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
-section {
-    grid-area: section;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "carousel carousel";
-    overflow: scroll;
+.explore-topics{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
 }
-section::-webkit-scrollbar{
-    display: none;
+.topic{
+    color: white;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    border-radius: 50px;
+    background-color: #1B4332;
+    cursor: pointer;
+
 }
 
 footer {
@@ -164,107 +243,13 @@ footer {
 }
 
 footer hr {
-    width: 90%;
+    width: 97%;
 }
 
-/* carousel */
-
-.carousel {
-    border-radius: 5px;
-    grid-area: carousel;
-}
-.mySlides {
-    display: none;
-}
 img {
     vertical-align: middle;
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 80%;
-  position: relative;
-  margin: auto;
-  /* grid-area: carousel; */
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-.slider::-webkit-scrollbar{
-    display: none;
-}
-.slider{
-    display: block;
-    height: 250px;
-    overflow-x: auto;
-}
+
 .slide{
     border: 1px solid #ccc;
     background-color: #fff;
