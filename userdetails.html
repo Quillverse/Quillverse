@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>User form</title>
+</head>
+  <body>
+    <div class="container">
+      <div class="title">User details</div>
+      <br>
+      <form action="">
+        <div class="user-details">
+          <div class="form-group">
+            <label class="form-title" for="">First name</label>
+            <input type="text" placeholder="Enter first name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-title" for="">Middle name</label>
+            <input type="text" placeholder="Enter middle name">
+          </div>
+          <div class="form-group">
+            <label class="form-title" for="">Last name</label>
+            <input type="text" placeholder="Enter last name" required>
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <br>
+        <div class="form-radio">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <label class="form-title"><b>Gender:</b></label>
+          <div class="category">
+            <label for="dot-1">
+              <span class="radio one"></span>
+              <span>Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="radio two"></span>
+              <span>Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="radio three"></span>
+              <span>Others</span>
+            </label>
+          </div>
+        </div>
+        <label class="form-title" for="">Upload Image:</label>
+        <div class="circle">
+           
+            <br>
+          <label for="file-upload" class="upload-label">
+            <span class="upload-icon"></span>
+              Image
+          </label>
+          <input id="file-upload" type="file" />
+          <img id="preview-image" src="" alt="" />
+          
+          </div>
+          <br>
+          <div class="bio1">
+            <!-- <label for="bio">BIO</label> -->
+            <textarea id="bio" name="bio" placeholder="Bio..."></textarea>
+          </div>
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
