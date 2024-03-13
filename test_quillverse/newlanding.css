@@ -96,7 +96,7 @@ nav li a {
 }
 
 header.scrolled nav {
-    background-color: var(--primaryColor3);
+    background-color: var(--primaryColor4);
 }
 
 .login-btn  {
@@ -348,7 +348,7 @@ aside {
 }
 
 footer {
-    background-color: var(--primaryColor3);
+    background-color: var(--primaryColor4);
     width: 100%;
     padding: 40px 0px 5px 0px;
     font-size: 1rem;
@@ -437,7 +437,7 @@ img {
 .social a {
     padding: 2px;
     color: inherit;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primaryFontColor);
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
@@ -445,7 +445,7 @@ img {
 }
 
 .social a:hover {
-    background-color: #ccc;
+    background-color: var(--primaryColor3);
 }
 
 .links a {
