@@ -1,0 +1,51 @@
+body {
+    background: #b8bdb98c;
+  }
+  .text-color {
+    color: #2D6A4F;
+  }
+  .card {
+    height: 50%;
+    width: 500px;
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    background: white;
+    border: none;
+    position: relative;
+  }
+  .container {
+    height: 100vh;
+  }
+  .email-text {
+    color: #cd5c5c;
+    font-size: 15px;
+  }
+  .form-control {
+    margin-right: 12px;
+    padding: 30px;
+  }
+  .form-control:focus {
+    color: #2D6A4F;
+    background-color: #d4efdf;
+    border-color: #c0392b;
+    outline: 0;
+    box-shadow: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+    width: 30%;
+    background-color: #2D6A4F;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
