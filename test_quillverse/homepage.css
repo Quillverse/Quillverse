@@ -40,7 +40,7 @@ body {
     font-size: .8rem;
     font-family: var(--primaryFont);
     color: var(--primaryFontColor);
-    background: url(BG.jpg);
+    background-color: #fff;
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 500px;
@@ -93,6 +93,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     transition: all 0.4s ease-in-out;
+    background-image: url(BG.jpg);
 }
 
 nav ul {
@@ -172,7 +173,6 @@ header.scrolled nav {
 /* slider */
 .slider-container {
     padding: 20px 0 20px 0;
-    background-color: rgba(0, 0, 0, 0.2);
     color: var(--primaryColor3);
 }
 
@@ -186,6 +186,7 @@ header.scrolled nav {
 .top-reads-title {
     padding-left: 25px;
     margin-bottom: 10px;
+    color: black;
 }
 
 .book-slider-content {
