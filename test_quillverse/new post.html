@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Post Page</title>
+	<link rel="stylesheet" type="text/css" href="./new post.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+	<div id="nav">
+        <div class="navrap">
+            <div class="name">
+                <h1>New Post</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+						<!-- <label for="category"><b>Category</b></label> -->
+						<select name="category" id="category" required>
+							<option value="">Select a category</option>
+							<option value="technology">Technology</option>
+							<option value="technology">Actions</option>
+							<option value="technology">Self Improvement</option>
+							<option value="technology">Relationships</option>
+							<option value="technology">Programming</option>
+							<option value="technology">Data Science</option>
+							<option value="technology">Productivity</option>
+							<option value="design">Money</option>
+							<option value="technology">Food</option>
+						
+						</select>
+					</li>
+                    <li>
+						<div class="tooltip"><a href="#"><i class="fa fa-cloud-upload" aria-hidden="true"  style="color:black"></i></a>
+							<span class="tooltiptext">Save as Drive</span>
+						  
+
+
+					</li>
+                    <li>
+						<a href="#"><input type="submit" value="Publish" /></a></div>
+					</li>  
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+	<div class="container">
+		<form action="#" method="post" enctype="multipart/form-data">
+				
+			<div class="form-field">
+				<div class="form-field2">
+				<!-- <label for="title"><b>Title</b></label> -->
+				<input type="text" name="title" id="title" placeholder="What is your thoughts..." required /></div>
+			</div>
+			<div class="form-field">
+				<!-- <label for="content"><b>Content</b></label> -->
+				<textarea name="content" id="content" rows="10" cols="30" placeholder="Type Something..." required></textarea>
+			</div>
+
+			<input type="file" name="image" id="image" accept="image/*"/>
+				<!-- <label for="image" id="upload-button">Upload Image</label> -->
+				
+				<div class="image-preview" id="image-preview">
+					<img src="" alt="" id="preview-image" height="200"/>
+				</div>
+					</form>
+	</div>
+	<script src="./new post.js"></script>
+</body>
+</html>
