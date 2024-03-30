@@ -17,16 +17,21 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header id="home">
+        <nav class="navbar">
             <img src="finalogo.png" height="42" width="42">
             <ul class="nav-links">
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="aboutus.html">About</a></li>
-                <li><a href="membership.html">Membership</a></li>
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#aboutUs" class="scroll-link">About</a></li>
+                <li><a href="#membership" class="scroll-link">Membership</a></li>
             </ul>
-            <div class="navbar__btn-container">
-                <button class="login-btn"><a href="login.html">Login</a></button>
+            <div class="hero__btn-container">
+                <button id="redirectToLoginForm" class="hero-btn">Login</button>
+                <script>
+                    document.getElementById("redirectToLoginForm").addEventListener("click", function () {
+                        window.location.href = "login.html?showSignUp=false";
+                    });
+                </script>
             </div>
 
         </nav>
@@ -34,22 +39,30 @@
     <main>
         <section class="hero-sec">
             <div class="hero">
-                <div class="welcome">
-                    <h1>Your go-to place to <br> read
-                        & write <br>insightful articles.</h1>
-                    <p>Explore the boundless world of Quillverse with us and <br>embark on a journey of discovery,
-                        learning,
-                        and inspiration</p>
+                <div class="hero__content">
+                    <div class="welcome">
+                        <h1>Your go-to place to <br> read
+                            & write <br>insightful articles.</h1>
+                        <p>Explore the boundless world of Quillverse with us and <br>embark on a journey of discovery,
+                            learning,
+                            and inspiration</p>
+                    </div>
+                    <div class="hero__btn-container">
+                        <button id="redirectToRegForm" class="hero-btn">Get Started</button>
+                        <script>
+                            document.getElementById("redirectToRegForm").addEventListener("click", function () {
+                                window.location.href = "login.html?showSignUp=true";
+                            });
+                        </script>
+                    </div>
                 </div>
-                <div class="hero__btn-container">
-                    <button class="hero-btn"><a href="signup.html">Get Started</a></button>
+                <div class="hero-sec__img">
+                    <img src="article-img.jpg">
                 </div>
             </div>
-            <div class="hero-sec__img">
-                <img src="hero-sec-illus.jpg">
-            </div>
+
         </section>
-        <section class="illustration-container">
+        <section class="illustration-container" id="aboutUs">
             <div class="illustration">
                 <div class="illustration__img">
                     <img src="illustration1.jpg">
@@ -82,7 +95,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="membership">
         <div class="social">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-snapchat"></i></a>
@@ -98,6 +111,9 @@
         <hr>
         <p class="copyright">Copyright &copy;2024 | Quillverse</p>
     </footer>
+    <script>
+
+    </script>
 </body>
 <script src="newLanding.js"></script>
 
