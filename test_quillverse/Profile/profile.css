@@ -45,10 +45,6 @@ body {
     font-size: .8rem;
     font-family: var(--primaryFont);
     color: var(--primaryFontColor);
-    background: url(BG.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 500px;
     height: 100%;
 
 }
