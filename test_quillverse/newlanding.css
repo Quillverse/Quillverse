@@ -27,6 +27,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* main Home  */
 
 h3{
@@ -41,14 +45,6 @@ body {
     margin: 0;
     font-size: .8rem;
     font-family: var(--primaryFont);
-    color: var(--primaryFontColor);
-    background-color: var(--primaryColor3);
-}
-
-header {
-    background-image: url(BG.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 nav {
@@ -57,7 +53,7 @@ nav {
     top: 0px;
     width: 100%;
     font-size: 1.15rem;
-    background-color: transparent;
+    background-color: var(--primaryColor4);
     position: fixed;
     display: flex;
     align-items: center;
@@ -96,7 +92,7 @@ nav li a {
 }
 
 header.scrolled nav {
-    background-color: var(--primaryColor4);
+    background-color: var(--primaryColor2);
 }
 
 .login-btn  {
@@ -124,12 +120,24 @@ header.scrolled nav {
     width: 100%;
     height: 100%;
     padding: 100px 72px 0 72px;
-    background: url(hero-section-bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     font-size: 1.2rem;
+}
+
+.hero-sec {
+    height: 100vh;
+    display: flex;
+}
+
+.hero-sec__img{
+    width: 40%;
+}
+
+.hero-sec__img img{
+    width: 100%;
+
 }
 
 .welcome a {
@@ -145,15 +153,6 @@ header.scrolled nav {
     opacity: 0.8;
 }
 
-.hero-sec {
-    height: 500px;
-}
-
-.hero-sec-img {
-    width: 100%;
-    height: 500px;
-}
-
 .introduction-container {
     display: flex;
     align-items: center;
@@ -165,6 +164,7 @@ header.scrolled nav {
     padding: 0 78px;
 }
 .illustration{
+    padding-top: 2.5rem;
     margin-bottom: 2.5rem;
     width:100%;
     display: flex;
@@ -348,9 +348,10 @@ aside {
 }
 
 footer {
+    border-top: 1px solid black;
     background-color: var(--primaryColor4);
     width: 100%;
-    padding: 40px 0px 5px 0px;
+    padding: 350px 0px 5px 0px;
     font-size: 1rem;
     position: relative;
     bottom: 0px;
