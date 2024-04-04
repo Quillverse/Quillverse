@@ -1,0 +1,272 @@
+:root {
+
+    /* light theme*/
+
+    --primaryColor1: #74c69d;
+    --primaryColor2: #D8F3DC;
+    --primaryColor3: #ededed;
+    --primaryFontColor: #000000;
+
+    /* dark theme */
+
+    --secColor1: #1B4332;
+    --secColor2: #081C15;
+    --secFontColor: #FFFFFF;
+
+    /* font family */
+
+    --primaryFont: "Poppins", sans-serif;
+
+    /* button */
+    --primaryButtonColor: #2D6A4F;
+    --primaryButtonColor2: #4b4c4d;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* main Home  */
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    font-size: .8rem;
+    font-family: var(--primaryFont);
+    color: var(--primaryFontColor);
+    background-color: var(--primaryColor3);
+}
+
+header {
+    border-bottom: 0.5px solid black;
+}
+
+nav {
+    z-index: 100;
+    padding: 0 25px;
+    top: 0px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease-in-out;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li a {
+    display: block;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--primaryFontColor);
+    transition: .1s ease-in-out;
+
+}
+
+.show {
+    display: block;
+}
+
+header.scrolled nav {
+    background-color: var(--primaryColor3);
+}
+
+.user {
+    margin: 1rem;
+}
+
+.user-btn a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    justify-content: center;
+    padding: 2px;
+    background-color: #D8F3DC;
+    border: 1px solid #ccc;
+    border-radius: 30%;
+}
+
+.user-btn a:hover {
+    opacity: 0.8;
+}
+
+/*category-title*/
+
+.category {
+    display: flex;
+}
+
+.category__name {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 1rem + 2.5vw, 4rem);
+}
+
+#catFollowersCnt,
+#catArticlesCnt {
+    color: rgb(83, 75, 75);
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 2rem);
+}
+
+.category--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.category__follow-btn {
+    background-color: var(--primaryButtonColor);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* grid */
+
+.recommendations {
+    margin-top: 40px;
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+
+}
+
+@media (max-width: 1024px) {
+    .recommendations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .recommendations {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.rec-article__img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.info__row1 {
+
+    display: flex;
+    align-items: center;
+}
+
+.info__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.rec-article p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+footer {
+    background-color: var(--primaryColor3);
+    width: 100%;
+    padding: 40px 0px 5px 0px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0px;
+}
+
+footer hr {
+    width: 97%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.social,
+.links {
+    list-style-type: none;
+    padding-bottom: 1.1rem;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.social a {
+    padding: 2px;
+    color: inherit;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    transition: .1s ease-in-out;
+}
+
+.social a:hover {
+    background-color: #ccc;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--primaryFontColor);
+    transition: .1s ease-in-out;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
