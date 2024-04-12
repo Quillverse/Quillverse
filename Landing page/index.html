@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quillverse</title>
+</head>
+
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <img src="../images/finalogo.png" height="42" width="42">
+            <ul class="nav-links">
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#aboutUs" class="scroll-link">About</a></li>
+                <li><a href="#membership" class="scroll-link">Membership</a></li>
+            </ul>
+            <div class="hero__btn-container">
+                <button id="redirectToLoginForm" class="hero-btn">Login</button>
+                <script>
+                    document.getElementById("redirectToLoginForm").addEventListener("click", function () {
+                        window.location.href = "../form/index.html?showSignUp=false";
+                    });
+                </script>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-container">
+            <div class="hero__text">
+                <div class="hero__text-up">
+                    <h1 class="hero-h1">Your go-to place to read
+                        & write insightful articles.</h1>
+
+                    <p class="hero-p">Explore the boundless world of Quillverse with us and embark on a journey of
+                        discovery,
+                        learning,
+                        and inspiration</p>
+                </div>
+                <div class="hero__text-down">
+                    <button class="hero-btn" id="redirectToSignUpForm">Get Started</button>
+                    <script>
+                        document.getElementById("redirectToSignUpForm").addEventListener("click", function () {
+                            window.location.href = "../form/index.html?showSignUp=true";
+                            
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="../images/article-img.jpg">
+
+            </div>
+        </section>
+        <section class="illustration-container" id="aboutUs">
+            <h1 class="illustration-h1">For Readers</h1>
+            <div class="readers">
+                <div class="illustration">
+                    <div class="illustration__img">
+                        <img src="../images/illustration1.jpg">
+                    </div>
+                    <div class="illustration__about">
+                        <p class="illustration-p">Each blog offers a unique perspective, insight, or piece of knowledge, expanding your
+                            understanding of the world and enriching your own experiences</p>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <div class="illustration__img">
+                        <img src="../images/illustration11.jpg">
+                    </div>
+                    <div class="illustration__about">
+                        <p class="illustration-p">We create a dynamic and engaging experience for readers through organizing live chat sessions
+                            or
+                            webinars with authors</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="illustration-container">
+            <h1 class="illustration-h1">For Authors</h1>
+            <div class="authors">
+                <div class="illustration">
+                    <div class="illustration__img">
+                        <img src="../images/illustration9.jpg">
+                    </div>
+                    <div class="illustration__about">
+                        <p class="illustration-p">Provides analytics features to help you understand your audience better and make data-driven
+                            decisions to improve your content strategy</p>
+                    </div>
+                </div>
+                <div class="illustration">
+                    <div class="illustration__img">
+                        <img src="../images/illustration12.jpg">
+                    </div>
+                    <div class="illustration__about">
+                        <p class="illustration-p">Integration with social media platforms enables bloggers to share their content easily,
+                            reaching
+                            a wider audience and driving traffic back to their blog</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-top-col">
+                    <h3>Contribute to Quillverse</h3>
+                    <p>Share your insights and contribute to our growing community</p>
+                    <button class="btn footer-btn">Get Started</button>
+                </div>
+                <div class="footer-top-col">
+                    <h3>Support Quillverse</h3>
+                    <p>Available for everyone, funded by readers</p>
+                    <button class="btn footer-btn">Support Us</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-col-left">
+                    <div class="footer-col left-1">
+                        <div class="website-logo">
+                            <img src="../images/finalogo.png" height="30" width="30">
+
+                        </div>
+                        <div class="website-name">
+                            <h2>Quillverse</h2>
+                        </div>
+                    </div>
+                    <div class="footer-col left-2">
+                        <p> Explore the boundless world of Quillverse with us and embark on a journey of
+                            discovery,
+                            learning,
+                            and inspiration</p>
+                    </div>
+                    <div class="footer-col left-3">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-pinterest"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col-right">
+                    <div class="footer-col">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Categories</a></li>
+                            <li><a href="">Authors</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Account</h3>
+                        <ul>
+                            <li><a href="">Login / Logout</a></li>
+                            <li><a href="">Settings</a></li>
+                            <li><a href="">Contributions</a></li>
+                            <li><a href="">Bookmarks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h3>Help</h3>
+                        <ul>
+                            <li><a href="">Contact us</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cookie policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-copyright">
+                <div class="copyright-container">
+                    <p class="copyright">© 2024 Quillverse | All rights reserved</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    </script>
+</body>
+<script src="script.js"></script>
+
+</html>
